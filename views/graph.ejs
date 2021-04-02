@@ -1,0 +1,44 @@
+<main>
+    <header>
+        <input type="text" value="<%= graphs.name%>">
+    </header>
+
+    <div id="grid">
+
+        <menu>
+            <ul id="buttonMenu">
+                <li id="buttonSave"><img src="/img/save.png" alt=""></li>
+                <li id="buttonSetting"><img src="/img/luminosite.png" alt=""></li>
+                <li id="buttonFit"><img src="/img/surgir.png" alt=""></li>
+                <li id="buttonReload"><img src="/img/tourner.png" alt=""></li>
+                <li id="buttonAddNode"><img src="/img/addNode.png" alt=""></li>
+                <li id="buttonDeleteNode"><img src="/img/deleteNode.png" alt=""></li>
+                <li id="buttonAddEdge"><img src="/img/addEdge.png" alt=""></li>
+                <li id="buttonDeleteEdge"><img src="/img/deleteEdge.png" alt=""></li>
+                <li id="buttonFindPath"><img src="/img/findPath.png" alt=""></li>
+                <input id="inputForEdgeData" type="text" value="">
+                <li id="buttonEditEdge"><img src="/img/editEdge.png" alt=""></li>
+            </ul>
+        </menu>
+
+        <div id="container">
+            <div id="dataZone">
+                <div id="cy"> </div>
+            </div>
+            <div class="infos">
+                <h2>Id : <span class="idOfNode"></span></h2>
+                <ul id="infosContainer">
+                    <p>Variables</p>
+                    <div class="containerOfData">
+
+                    </div>
+                </ul>
+                <button id="validateDataBtn">VALIDER</button>
+                <button id="addDataBtn">AJOUTER</button>
+
+            </div>
+        </div>
+    </div>
+</main>
+<script src="/src/cytoscape.min.js"></script>
+<script src="/src/graph.js" graphData="<%=graphs.data%>"></script>

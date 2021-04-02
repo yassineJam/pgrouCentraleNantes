@@ -1,0 +1,81 @@
+<main>
+    <header>
+        <h1>My Dashboard</h1>
+    </header>
+
+    <div id="containerDatas">
+        <div class="container">
+            <% graphs.forEach(graph => {%>
+                <div class="data">
+                    <h2>GRAPH</h2>
+                    <h3>
+                        <%= graph.name %>
+                    </h3>
+                    <p>Dernière modification :
+                        <%= graph.date %>
+                    </p>
+                    <div class="containerBtn">
+                        <div class="editBtn">
+                            <a href="/graph/<%= graph.id %>">EDIT</a>
+                        </div>
+                        <div class="deleteBtn">
+                            <a class="btnDelete" type="Graph" prop="<%= graph.id %>">DELETE</a>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+                    <div class="btnNew" id="_graph">
+                        <a> + NOUVEAU GRAPH</a>
+                    </div>
+        </div>
+        <div class="container">
+            <% trees.forEach(tree => {%>
+                <div class="data">
+                    <h2>TREE</h2>
+                    <h3>
+                        <%= tree.name %>
+                    </h3>
+                    <p>Dernière modification :
+                        <%= tree.date%>
+                    </p>
+                    <div class="containerBtn">
+                        <div class="editBtn">
+                            <a href="/tree/<%= tree.id %>">EDIT</a>
+                        </div>
+                        <div class="deleteBtn">
+                            <a class="btnDelete" type="Tree" prop="<%= tree.id %>">DELETE</a>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+                    <div class="btnNew" id="_tree">
+                        <a> + NOUVEL ARBRE</a>
+                    </div>
+        </div>
+        <div class="container">
+            <% lists.forEach(list => {%>
+                <div class="data">
+                    <h2>LIST</h2>
+                    <h3>
+                        <%= list.name %>
+                    </h3>
+                    <p>Dernière modification :
+                        <%= list.date%>
+                    </p>
+                    <div class="containerBtn">
+                        <div class="editBtn">
+                            <a href="/list/<%= list.id %>">EDIT</a>
+                        </div>
+                        <div class="deleteBtn">
+                            <a class="btnDelete" type="List" prop="<%= list.id %>">DELETE</a>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+                    <div class="btnNew" id="_list">
+                        <a> + NOUVELLE LISTE</a>
+                    </div>
+        </div>
+    </div>
+</main>
+<script src="/src/dashboard.js" userId="<%= user.id %>"></script>

@@ -1,0 +1,29 @@
+<main>
+    <header>
+        <input type="text" value="<%= trees.name%>">
+    </header>
+
+    <div id="grid">
+
+        <menu>
+            <ul id="buttonMenu">
+                <li id="buttonSave"><img src="/img/save.png" alt=""></li>
+                <li id="add-child"><img src="/img/addChild.png" alt=""></li>
+                <li id="remove-node"><img src="/img/deleteNode.png" alt=""></li>
+                <li id="remove-child"><img src="/img/deleteEdge.png" alt=""></li>
+                <li id="turn-bst"><img src="/img/bstIcon.png" alt=""></li>
+            </ul>
+        </menu>
+
+        <div id="container">
+            <div id="dataZone">
+                <div id="cy">
+                    <svg id="svgSupport"></svg>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+<script src="/src/tree.js" treeData="<%=trees.data%>"></script>

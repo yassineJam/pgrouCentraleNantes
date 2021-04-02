@@ -1,0 +1,399 @@
+html {
+    width: 100vw;
+    overflow-x: hidd en;
+}
+
+body {
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    display: flex;
+}
+
+#menu {
+    height: 100vh;
+    font-size: 1rem;
+    width: 15%;
+    border-right: 1px solid #E5E5E5;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu ul li {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+#menu ul li:hover {
+    background: #7182AD;
+    color: white;
+    cursor: pointer;
+}
+
+#menu ul li:hover a {
+    color: white;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    font-weight: lighter;
+    color: black;
+    margin-left: 20px;
+}
+
+#menu ul li:nth-child(1) {
+    height: 70px;
+    font-weight: bold;
+    border-bottom: 1px solid #E5E5E5;
+    ;
+}
+
+#profilePic {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #213058;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: lighter;
+}
+
+
+/* DEBUT HEADER*/
+
+main {
+    width: 85%;
+    height: 100vh;
+}
+
+header {
+    padding-left: 20px;
+    height: 8%;
+    border-bottom: 1px solid #E5E5E5;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+header input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding-left: 20px;
+    font-size: 28px;
+}
+
+
+/* FIN DU HEADER*/
+
+#containerDatas {
+    width: 100%;
+    height: 84%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btnNew {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #C05850;
+    font-size: 15px;
+    box-shadow: 5px 7px 10px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    color: white;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.btnNew:hover {
+    opacity: 0.7;
+}
+
+.btnNew a {
+    text-decoration: none;
+    color: white;
+}
+
+#_tree {
+    background: #5091C0;
+}
+
+#_list {
+    background: #88C050;
+}
+
+.data {
+    width: 100%;
+    height: 150px;
+    box-shadow: 5px 7px 10px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+.data h2 {
+    padding: 10px;
+    color: #C05850;
+    font-size: 15px;
+}
+
+.data h3 {
+    padding: 10px;
+    margin-top: 10px;
+    color: #797979;
+    font-size: 20px;
+}
+
+.data p {
+    font-size: 12px;
+    font-style: italic;
+    padding: 10px;
+    color: #A5A4A4;
+}
+
+.containerBtn {
+    display: flex;
+    height: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deleteBtn a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.deleteBtn:hover {
+    opacity: 0.6;
+}
+
+.deleteBtn {
+    margin-right: 30px;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    background-color: #C05850;
+    border-radius: 5px;
+}
+
+.editBtn:hover {
+    background-color: rgb(228, 227, 227);
+}
+
+.editBtn a {
+    text-decoration: none;
+    color: grey;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.editBtn {
+    margin-left: 30px;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* FIN HOME DASHBOARD*/
+
+#grid {
+    height: 92%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+menu {
+    height: 6%;
+    width: 100%;
+    box-shadow: 3px 3px 12px 0px #cfcfcf;
+    background-color: #202224;
+    z-index: 3;
+}
+
+#container {
+    height: 94%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.infos {
+    box-sizing: border-box;
+    width: 300px;
+    height: 80%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    right: 20px;
+    bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 12px 0px #cfcfcf;
+    z-index: 50;
+    padding: 20px;
+    font-size: 20px;
+    transform: translateX(320px);
+    transition: transform 330ms ease-in-out;
+}
+
+#infosContainer {
+    width: 100%;
+    margin-top: 40px;
+}
+
+#infosContainer p {
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+#inputForEdgeData {
+    height: 70%;
+    width: 200px;
+}
+
+.infos button {
+    width: 100%;
+    height: 30px;
+    background-color: #88C050;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.infos button:hover {
+    opacity: 0.7;
+}
+
+.containerOfData {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blockData input {
+    width: 85%;
+    height: 80%;
+}
+
+.blockData {
+    margin-bottom: 10px;
+    height: 30px;
+    display: flex;
+}
+
+.deletedatabtn {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C05850;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.deletedatabtn:hover {
+    opacity: 0.7;
+}
+
+.idOfNode {
+    color: rebeccapurple;
+}
+
+#dataZone {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#cy {
+    width: 100%;
+    height: 100%;
+}
+
+#buttonMenu li {
+    margin: 0 10px;
+}
+
+#buttonMenu li:hover {
+    cursor: pointer;
+}
+
+#buttonMenu li img {
+    width: 30px;
+    height: 30px;
+}
+
+#buttonMenu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#buttonAddEdge {
+    display: none;
+}
+
+#buttonDeleteEdge {
+    display: none;
+}
+
+
+/* ARBRE CSS */
+
+#svgSupport {
+    width: 100%;
+    height: 100%;
+}
+
+.node {
+    cursor: pointer;
+}
+
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 3px;
+}
+
+.node text {
+    font: 12px sans-serif;
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
